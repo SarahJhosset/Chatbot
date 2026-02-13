@@ -4,8 +4,17 @@
     <title>ChatBot</title>
   </head>
   <body>
-    <h1>Mi ChatBot</h1>
+    <h1>ChatBot UCB</h1>
+    
     <div id="saludo-div"></div>
+    
+    <form id="nombre-form">
+      <label for="nombre-input">¿Cuál es tu nombre?</label>
+      <input type="text" id="nombre-input" />
+      <input type="submit" value="Enviar" id="enviar-button" />
+    </form>
+    
+    <div id="respuesta-div"></div>
 
     <script type="module" src="./src/presenter.js"></script>
   </body>

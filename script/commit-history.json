@@ -1,11 +1,11 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "2122cffa808211af74e23552608df74fd7a003e9",
     "author": "Sarah Cazorla",
     "commit": {
       "date": "2026-02-13T22:29:17.000Z",
       "message": "feat: agregar funcionalidad saludar con Hola",
-      "url": "https://github.com/SarahJhosset/Chatbot/commit/HEAD"
+      "url": "https://github.com/SarahJhosset/Chatbot/commit/2122cffa808211af74e23552608df74fd7a003e9"
     },
     "stats": {
       "total": 58,
@@ -17,5 +17,24 @@
     "test_count": 1,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Sarah Cazorla",
+    "commit": {
+      "date": "2026-02-13T22:48:23.000Z",
+      "message": "feat: agregar funcionalidad saludar con Nombre",
+      "url": "https://github.com/SarahJhosset/Chatbot/commit/HEAD"
+    },
+    "stats": {
+      "total": 47,
+      "additions": 28,
+      "deletions": 19,
+      "date": "2026-02-13"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
   }
 ]

@@ -1,5 +1,15 @@
-import saludar from "./bot.js";
+import { saludar, saludarConNombre } from "./bot.js";
 
-const div = document.querySelector("#saludo-div");
+const saludoDiv = document.querySelector("#saludo-div");
+const nombreInput = document.querySelector("#nombre-input");
+const form = document.querySelector("#nombre-form");
+const respuestaDiv = document.querySelector("#respuesta-div");
 
-div.innerHTML = "<p>" + saludar() + "</p>";
+saludoDiv.innerHTML = "<p>" + saludar() + "</p>";
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  
+  const nombre = nombreInput.value;
+  respuestaDiv.innerHTML = "<p>" + saludarConNombre(nombre) + "</p>";
+});

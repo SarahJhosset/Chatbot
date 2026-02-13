@@ -1,8 +1,14 @@
 [
   {
-    "commitId": "HEAD",
+    "commitId": "2122cffa808211af74e23552608df74fd7a003e9",
     "commitName": "feat: agregar funcionalidad saludar con Hola",
     "commitTimestamp": 1771021760187,
     "testId": 0
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar funcionalidad saludar con Nombre",
+    "commitTimestamp": 1771022905477,
+    "testId": 1
   }
 ]
