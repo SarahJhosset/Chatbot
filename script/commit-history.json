@@ -19,17 +19,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "31f6b950ae44619a6d6cf4c7c330ff07a9fdf47b",
     "author": "Sarah Cazorla",
     "commit": {
       "date": "2026-02-13T22:48:23.000Z",
       "message": "feat: agregar funcionalidad saludar con Nombre",
-      "url": "https://github.com/SarahJhosset/Chatbot/commit/HEAD"
+      "url": "https://github.com/SarahJhosset/Chatbot/commit/31f6b950ae44619a6d6cf4c7c330ff07a9fdf47b"
     },
     "stats": {
       "total": 47,
       "additions": 28,
       "deletions": 19,
+      "date": "2026-02-13"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Sarah Cazorla",
+    "commit": {
+      "date": "2026-02-13T22:56:46.000Z",
+      "message": "feat: agregar funcionalidad saludar con de acuerdo a la Hora",
+      "url": "https://github.com/SarahJhosset/Chatbot/commit/HEAD"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 22,
+      "deletions": 2,
       "date": "2026-02-13"
     },
     "coverage": 0,

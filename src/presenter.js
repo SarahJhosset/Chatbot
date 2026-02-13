@@ -13,3 +13,5 @@ form.addEventListener("submit", (event) => {
   const nombre = nombreInput.value;
   respuestaDiv.innerHTML = "<p>" + saludarConNombre(nombre) + "</p>";
 });
+
+console.log("Hora actual:", new Date().getHours());
