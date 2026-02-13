@@ -12,9 +12,15 @@
     "testId": 1
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0a4a6709b0160528e7b5d2997f2bd963fcf940dc",
     "commitName": "feat: agregar funcionalidad saludar con de acuerdo a la Hora",
     "commitTimestamp": 1771023407781,
     "testId": 2
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar funcionalidad saludar de acuerdo al género",
+    "commitTimestamp": 1771024563305,
+    "testId": 3
   }
 ]

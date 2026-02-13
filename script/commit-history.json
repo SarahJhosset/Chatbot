@@ -38,17 +38,36 @@
     "conclusion": "neutral"
   },
   {
-    "sha": "HEAD",
+    "sha": "0a4a6709b0160528e7b5d2997f2bd963fcf940dc",
     "author": "Sarah Cazorla",
     "commit": {
       "date": "2026-02-13T22:56:46.000Z",
       "message": "feat: agregar funcionalidad saludar con de acuerdo a la Hora",
-      "url": "https://github.com/SarahJhosset/Chatbot/commit/HEAD"
+      "url": "https://github.com/SarahJhosset/Chatbot/commit/0a4a6709b0160528e7b5d2997f2bd963fcf940dc"
     },
     "stats": {
       "total": 24,
       "additions": 22,
       "deletions": 2,
+      "date": "2026-02-13"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Sarah Cazorla",
+    "commit": {
+      "date": "2026-02-13T23:16:01.000Z",
+      "message": "feat: agregar funcionalidad saludar de acuerdo al género",
+      "url": "https://github.com/SarahJhosset/Chatbot/commit/HEAD"
+    },
+    "stats": {
+      "total": 45,
+      "additions": 38,
+      "deletions": 7,
       "date": "2026-02-13"
     },
     "coverage": 0,

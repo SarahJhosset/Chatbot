@@ -19,9 +19,30 @@ function obtenerSaludoPorHora() {
   }
 }
 
-function saludarConNombre(nombre) {
-  const saludoHora = obtenerSaludoPorHora();
-  return saludoHora + ", " + nombre;
+function obtenerTratamiento(genero) {
+  if (genero === "masculino") {
+    return "Señor";
+  } else if (genero === "femenino") {
+    return "Señora";
+  } else {
+    return "Persona";
+  }
 }
 
-export { saludar, saludarConNombre };
+function saludarConNombre(nombre, genero) {
+  const saludoHora = obtenerSaludoPorHora();
+  const tratamiento = obtenerTratamiento(genero);
+  
+  if (tratamiento === "") {
+    return saludoHora + ", " + nombre;
+  } else {
+    return saludoHora + ", " + tratamiento + " " + nombre;
+  }
+}
+
+function saludarConGenero(genero) {
+  const tratamiento = obtenerGenero(genero);
+  return "Hola, " + tratamiento;
+}
+
+export { saludar, saludarConNombre, saludarConGenero };
