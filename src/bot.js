@@ -19,19 +19,33 @@ function obtenerSaludoPorHora() {
   }
 }
 
-function obtenerTratamiento(genero) {
+function obtenerTratamiento(genero, edad) {
+  const edadNumerica = Number(edad);
+  
+  if (genero === "" || isNaN(edadNumerica) || edadNumerica === 0) {
+    return "";
+  }
+  
   if (genero === "masculino") {
-    return "Señor";
+    if (edadNumerica < 18) {
+      return "joven";
+    } else {
+      return "Sr.";
+    }
   } else if (genero === "femenino") {
-    return "Señora";
+    if (edadNumerica < 18) {
+      return "señorita";
+    } else {
+      return "Sra.";
+    }
   } else {
-    return "Persona";
+    return "";
   }
 }
 
-function saludarConNombre(nombre, genero) {
+function saludarConNombre(nombre, genero, edad) {
   const saludoHora = obtenerSaludoPorHora();
-  const tratamiento = obtenerTratamiento(genero);
+  const tratamiento = obtenerTratamiento(genero, edad);
   
   if (tratamiento === "") {
     return saludoHora + ", " + nombre;
@@ -40,9 +54,4 @@ function saludarConNombre(nombre, genero) {
   }
 }
 
-function saludarConGenero(genero) {
-  const tratamiento = obtenerGenero(genero);
-  return "Hola, " + tratamiento;
-}
-
-export { saludar, saludarConNombre, saludarConGenero };
+export { saludar, saludarConNombre };

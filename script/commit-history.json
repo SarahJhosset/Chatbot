@@ -57,18 +57,37 @@
     "conclusion": "neutral"
   },
   {
-    "sha": "HEAD",
+    "sha": "aff856d5494abba6ff52422b4e254704520f460d",
     "author": "Sarah Cazorla",
     "commit": {
       "date": "2026-02-13T23:16:01.000Z",
       "message": "feat: agregar funcionalidad saludar de acuerdo al género",
-      "url": "https://github.com/SarahJhosset/Chatbot/commit/HEAD"
+      "url": "https://github.com/SarahJhosset/Chatbot/commit/aff856d5494abba6ff52422b4e254704520f460d"
     },
     "stats": {
       "total": 45,
       "additions": 38,
       "deletions": 7,
       "date": "2026-02-13"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Sarah Cazorla",
+    "commit": {
+      "date": "2026-02-14T19:02:28.000Z",
+      "message": "feat: agregar funcionalidad saludar de acuerdo a la edad",
+      "url": "https://github.com/SarahJhosset/Chatbot/commit/HEAD"
+    },
+    "stats": {
+      "total": 43,
+      "additions": 29,
+      "deletions": 14,
+      "date": "2026-02-14"
     },
     "coverage": 0,
     "test_count": 0,
