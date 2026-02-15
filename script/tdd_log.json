@@ -24,9 +24,39 @@
     "testId": 3
   },
   {
-    "commitId": "HEAD",
+    "commitId": "504e7d316b7a92de6815fe0dfd68b45101a3a9ea",
     "commitName": "feat: agregar funcionalidad saludar de acuerdo a la edad",
     "commitTimestamp": 1771095750663,
     "testId": 4
+  },
+  {
+    "numPassedTests": 0,
+    "failedTests": 0,
+    "numTotalTests": 0,
+    "timestamp": 1771167445275,
+    "success": false,
+    "testId": 5
+  },
+  {
+    "numPassedTests": 0,
+    "failedTests": 0,
+    "numTotalTests": 0,
+    "timestamp": 1771168069026,
+    "success": false,
+    "testId": 5
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 0,
+    "numTotalTests": 7,
+    "timestamp": 1771168189409,
+    "success": true,
+    "testId": 5
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar pruebas para bot.js",
+    "commitTimestamp": 1771168241129,
+    "testId": 5
   }
 ]

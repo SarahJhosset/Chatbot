@@ -76,12 +76,12 @@
     "conclusion": "neutral"
   },
   {
-    "sha": "HEAD",
+    "sha": "504e7d316b7a92de6815fe0dfd68b45101a3a9ea",
     "author": "Sarah Cazorla",
     "commit": {
       "date": "2026-02-14T19:02:28.000Z",
       "message": "feat: agregar funcionalidad saludar de acuerdo a la edad",
-      "url": "https://github.com/SarahJhosset/Chatbot/commit/HEAD"
+      "url": "https://github.com/SarahJhosset/Chatbot/commit/504e7d316b7a92de6815fe0dfd68b45101a3a9ea"
     },
     "stats": {
       "total": 43,
@@ -93,5 +93,24 @@
     "test_count": 0,
     "failed_tests": 0,
     "conclusion": "neutral"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Sarah Cazorla",
+    "commit": {
+      "date": "2026-02-15T15:10:39.000Z",
+      "message": "feat: agregar pruebas para bot.js",
+      "url": "https://github.com/SarahJhosset/Chatbot/commit/HEAD"
+    },
+    "stats": {
+      "total": 69,
+      "additions": 69,
+      "deletions": 0,
+      "date": "2026-02-15"
+    },
+    "coverage": 88.46,
+    "test_count": 7,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
