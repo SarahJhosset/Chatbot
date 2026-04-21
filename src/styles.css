@@ -225,3 +225,84 @@ h1, h2 { margin: 0; }
   .navbar { flex-direction: column; align-items: flex-start; }
   .home-panel, .brand-panel, .login-card { padding: 24px; }
 }
+
+.nav-icon-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 160ms;
+  flex-shrink: 0;
+}
+.nav-icon-btn:hover { background: rgba(255, 255, 255, 0.12); }
+.nav-icon-btn.home-btn { background: #2ECC71; border-color: #2ECC71; }
+.nav-divider { width: 1px; height: 24px; background: rgba(255,255,255,0.15); }
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  color: #888;
+  padding: 4px 8px;
+}
+.crumb-home { cursor: pointer; }
+.crumb-home:hover { color: #2ECC71; }
+.crumb-sep { color: #ccc; }
+.crumb-active { color: #2C3E50; font-weight: 700; }
+
+
+.toast-alert {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #2C3E50;
+  border-radius: 14px;
+  padding: 14px 18px;
+  color: #fff;
+  max-width: 340px;
+  box-shadow: 0 8px 24px rgba(44,62,80,0.18);
+  z-index: 999;
+}
+.toast-icon-wrap {
+  font-size: 20px;
+  color: #E67E22;
+}
+.toast-body strong { color: #E67E22; display: block; margin-bottom: 2px; }
+.toast-body p { font-size: 0.83rem; color: rgba(255,255,255,0.8); margin: 0; }
+.toast-close {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+.badge-green { background: #eafaf1; color: #1e8449; border: 1px solid #a9dfbf; }
+.badge-orange { background: #fdf3e7; color: #a04000; border: 1px solid #f0b27a; }
+.badge-gray   { background: #f4f7f6; color: #5d6d7e; border: 1px solid #dde5e2; }
+
+.empty-state {
+  text-align: center;
+  padding: 36px 20px;
+  color: #aab;
+}
+.empty-state strong { display: block; color: #2C3E50; font-size: 0.95rem; margin-bottom: 6px; }
+.empty-state p { font-size: 0.85rem; }

@@ -60,9 +60,15 @@
     "testId": 5
   },
   {
-    "commitId": "HEAD",
+    "commitId": "58e3e94890b5724dbff2237b0c3796f563e65796",
     "commitName": "se convierte en TuBasurita",
     "commitTimestamp": 1776742510610,
     "testId": 6
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar barra de navegacion y notificaciones",
+    "commitTimestamp": 1776743939064,
+    "testId": 7
   }
 ]

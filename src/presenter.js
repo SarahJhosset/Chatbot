@@ -16,6 +16,10 @@ export default class CollectionSchedulePresenter {
       this.showScheduleForDistrict(districtId);
     });
     this.view.bindCreateReport((data) => this.createReport(data));
+
+    this.view.bindHomeButton(() => {
+    this.view.showHome(this._session);
+});
   }
 
   login(credentials) {

@@ -127,7 +127,23 @@ export default class CollectionScheduleView {
       });
 
       this.reportsList.append(div);
+
+      if (reports.length === 0) {
+        this.reportsList.innerHTML = `
+            <div class="empty-state">
+            <strong>No hay reportes aún</strong>
+            <p>Sé el primero en reportar basura en tu zona.</p>
+            </div>
+        `;
+        return;
+}
     });
   }
+
+  bindHomeButton(handler) {
+  document.querySelector('#btn-home').addEventListener('click', () => {
+    handler();
+  });
+}
 
 }
