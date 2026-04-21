@@ -95,12 +95,12 @@
     "conclusion": "neutral"
   },
   {
-    "sha": "HEAD",
+    "sha": "2ca1b4b8ce421d52a2a048317bef9df5372ee22e",
     "author": "Sarah Cazorla",
     "commit": {
       "date": "2026-02-15T15:10:39.000Z",
       "message": "feat: agregar pruebas para bot.js",
-      "url": "https://github.com/SarahJhosset/Chatbot/commit/HEAD"
+      "url": "https://github.com/SarahJhosset/Chatbot/commit/2ca1b4b8ce421d52a2a048317bef9df5372ee22e"
     },
     "stats": {
       "total": 69,
@@ -110,6 +110,25 @@
     },
     "coverage": 88.46,
     "test_count": 7,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Sarah",
+    "commit": {
+      "date": "2026-04-21T03:35:09.000Z",
+      "message": "se convierte en TuBasurita",
+      "url": "https://github.com/SarahJhosset/Chatbot/commit/HEAD"
+    },
+    "stats": {
+      "total": 1251,
+      "additions": 1080,
+      "deletions": 171,
+      "date": "2026-04-21"
+    },
+    "coverage": 68.1,
+    "test_count": 20,
     "failed_tests": 0,
     "conclusion": "success"
   }

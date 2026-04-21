@@ -1,21 +1,86 @@
-import { saludar, saludarConNombre } from "./bot.js";
+export default class CollectionSchedulePresenter {
+  constructor({ model, view }) {
+    this.model = model;
+    this.view = view;
+  }
 
-// Seleccionar elementos del HTML
-const saludoDiv = document.querySelector("#saludo-div");
-const nombreInput = document.querySelector("#nombre-input");
-const generoSelect = document.querySelector("#genero-select");
-const edadInput = document.querySelector("#edad-input");
-const form = document.querySelector("#nombre-form");
-const respuestaDiv = document.querySelector("#respuesta-div");
+  initialize() {
+    this.view.showLogin();
+    this.view.bindLogin((credentials) => {
+      this.login(credentials);
+    });
+    this.view.bindGuestAccess(() => {
+      this.enterAsGuest();
+    });
+    this.view.bindDistrictSelection((districtId) => {
+      this.showScheduleForDistrict(districtId);
+    });
+    this.view.bindCreateReport((data) => this.createReport(data));
+  }
 
-saludoDiv.innerHTML = "<p>" + saludar() + "</p>";
+  login(credentials) {
+    const session = this.model.login(credentials);
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  
-  const nombre = nombreInput.value;
-  const genero = generoSelect.value;
-  const edad = edadInput.value;
-  
-  respuestaDiv.innerHTML = "<p>" + saludarConNombre(nombre, genero, edad) + "</p>";
-});
+    if (!session) {
+      return null;
+    }
+
+    this.showHome(session);
+    return session;
+  }
+
+  enterAsGuest() {
+    const session = this.model.loginAsGuest();
+    this.showHome(session);
+
+    return session;
+  }
+
+  showHome(session) {
+    const options = this.model.getDistrictOptions();
+
+    this.view.showHome(session);
+    this.view.renderDistrictOptions(options);
+    this.view.showInitialMessage();
+
+    if (this.model.getReports && this.view.renderReports) {
+      const reports = this.model.getReports();
+      this.view.renderReports(reports, (id) => this.likeReport(id));
+    }
+  }
+
+  showScheduleForDistrict(districtId) {
+    if (!districtId) {
+      this.view.showInitialMessage();
+      return;
+    }
+
+    const schedule = this.model.getScheduleByDistrict(districtId);
+
+    if (!schedule) {
+      this.view.showScheduleNotFound();
+      return;
+    }
+
+    this.view.showSchedule(schedule);
+  }
+
+  createReport(data) {
+    this.model.createReport(data);
+
+    if (this.model.getReports && this.view.renderReports) {
+      const reports = this.model.getReports();
+      this.view.renderReports(reports, (id) => this.likeReport(id));
+    }
+  }
+
+  likeReport(id) {
+  this.model.likeReport(id);
+
+    if (this.model.getReports && this.view.renderReports) {
+      const reports = this.model.getReports();
+      this.view.renderReports(reports, (id) => this.likeReport(id));
+    }
+  }
+
+}

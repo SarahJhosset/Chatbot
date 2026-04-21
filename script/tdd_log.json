@@ -54,9 +54,15 @@
     "testId": 5
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2ca1b4b8ce421d52a2a048317bef9df5372ee22e",
     "commitName": "feat: agregar pruebas para bot.js",
     "commitTimestamp": 1771168241129,
     "testId": 5
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "se convierte en TuBasurita",
+    "commitTimestamp": 1776742510610,
+    "testId": 6
   }
 ]
